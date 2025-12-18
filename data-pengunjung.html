@@ -1,0 +1,152 @@
+<html>
+
+<head>
+	<title></title>
+	<style>
+		.navbar {
+			position: flex;
+			width: 100%;
+			color: white;
+			background-color: black;
+			height: 60px;
+			display: flex;
+			top: 0;
+			box-sizing: border-box;
+			z-index: 1000;
+			align-items: center;
+			justify-content: space-between;
+			padding-right: 10px;
+
+		}
+
+		.nav-links {
+			list-style: none;
+			display: flex;
+			gap: 25px;
+
+		}
+
+		.nav-links li a {
+			color: #f4f4f9;
+			text-decoration: none;
+			font-size: 17px;
+			transition: 0.3s;
+
+			background-color: grey;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 10%;
+		}
+
+		.nav-links li a:hover {
+			background-color: white;
+			color: grey;
+		}
+
+		#content {
+			padding: 80px 50px;
+			background: linear-gradient(135deg, #6a5af9, #5ac8fa);
+			color: white;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+			border-radius: 0 0px 10px 10px;
+
+		}
+
+		.logo {
+			color: black;
+			text-shadow: 0 0 7px #fff, 0 0 21px #ff00de;
+			margin-left: 10px;
+			font-size: 21px;
+			font-weight: bold;
+			background-color: white;
+			border-radius: 50%
+		}
+
+		.card {
+			width: auto;
+			/**/
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			overflow: hidden;
+			text-align: center;
+			margin: 5px;
+
+		}
+
+		.card:hover {
+			background-color: grey;
+			color: white;
+		}
+
+		.card-img {
+			width: 100%;
+			height: 100px;
+			object-fit: cover;
+			padding: 15px;
+			align-items: center;
+		}
+
+		.card-btn {
+			background-color: #007bff;
+			color: white;
+			border: none;
+			padding: 10px 15px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin: 10px 0 15px;
+		}
+
+		.card-title {
+			font-size: 18px;
+			margin: 10px 0 5px;
+		}
+
+		.card-subtitle {
+			font-size: 10px;
+			color: #555;
+			padding: 0 10px;
+		}
+
+		.all {
+			display: flex;
+			margin-left: auto;
+			margin-right: auto;
+			justify-content: center;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="logo">
+			AI
+		</div>
+		<ul class="nav-links">
+			<li><a href="index.html">Beranda</a></li>
+			<li><a href="../profil_sederhana/profilku.html">Profil</a></li>
+			<li><a href="#">Kontak</a></li>
+			<li><a href="data-pengunjung">Data Pengunjung</a></li>
+		</ul>
+	</nav>
+
+	<center>
+		Daftar Kunjungan
+	</center>
+	<div class="all">
+		<div class="card">
+			<img src="img/WIN_20250815_14_13_26_Pro.jpg" width="150px">
+			<h4 class="card-title">Yazid Diansyah</h4>
+			<p class="card-subtitle">Full-satack Developer | Data Scientist | Dev Ops</P>
+			<button class="card-btn">lihat profil</button>
+		</div>
+		<div class="card">
+			<img src="img/WIN_20250930_11_25_19_Pro.jpg" width="150px">
+			<h4 class="card-title">Dika Herlambang</h4>
+			<p class="card-subtitle">Full-satack Developer | Data Scientist | Dev Ops</P>
+			<button class="card-btn">lihat profil</button>
+		</div>
+	</div>
+</body>
+
+</html>
